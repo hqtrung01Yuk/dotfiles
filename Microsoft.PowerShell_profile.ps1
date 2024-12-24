@@ -32,7 +32,7 @@ function vscode {
 
 Set-Alias glog GitLog
 Set-Alias gin GitInit
-Set-Alias gempty GitCommitEmptyMess
+Set-Alias gcempty GitCommitEmptyMes
 Set-Alias gmain GitPushMain
 Set-Alias gs GitStatus
 Set-Alias vs vscode
