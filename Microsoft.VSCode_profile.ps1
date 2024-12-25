@@ -18,6 +18,10 @@ function GitCommitEmptyMes {
     git commit --allow-empty-message
 }
 
+function GitCommitMes($message) {
+    git commit -m $message
+}
+
 function GitLog {
     git log
 }
@@ -41,6 +45,7 @@ Set-Alias gmain GitPushMain
 Set-Alias gs GitStatus
 Set-Alias vs vscode
 Set-Alias ga Git
+Set-Alias gcmess GitCommitMes
 
 Import-Module Terminal-Icons
 
