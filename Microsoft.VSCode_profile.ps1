@@ -10,8 +10,8 @@ function GitInit {
     git init
 }
 
-function GitAdd($file) {
-    git add $file
+function GitAdd($files) {
+    git add $files
 }
 
 function GitCommitEmptyMes {
@@ -30,8 +30,8 @@ function GitStatus {
     git status
 }
 
-function vscode($file) {
-    code $file
+function vscode($files) {
+    code $files
 }
 
 Set-Alias glog GitLog
