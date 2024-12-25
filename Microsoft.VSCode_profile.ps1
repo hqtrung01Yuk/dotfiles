@@ -10,6 +10,10 @@ function GitInit {
     git init
 }
 
+function GitAdd($file) {
+    git add $file
+}
+
 function GitCommitEmptyMes {
     git commit --allow-empty-message
 }
@@ -26,8 +30,8 @@ function GitStatus {
     git status
 }
 
-function vscode {
-    code .
+function vscode($file) {
+    code $file
 }
 
 Set-Alias glog GitLog
@@ -36,10 +40,11 @@ Set-Alias gcempty GitCommitEmptyMes
 Set-Alias gmain GitPushMain
 Set-Alias gs GitStatus
 Set-Alias vs vscode
+Set-Alias ga Git
 
 Import-Module Terminal-Icons
 
 function which ($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
-      Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
