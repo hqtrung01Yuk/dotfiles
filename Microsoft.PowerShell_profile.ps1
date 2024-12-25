@@ -10,12 +10,16 @@ function GitInit {
     git init
 }
 
-function GitAdd($file) {
-    git add $file
+function GitAdd($files) {
+    git add $files
 }
 
 function GitCommitEmptyMes {
     git commit --allow-empty-message
+}
+
+function GitCommitMes($message) {
+    git commit -m $message
 }
 
 function GitLog {
@@ -30,8 +34,8 @@ function GitStatus {
     git status
 }
 
-function vscode($file) {
-    code $file
+function vscode($files) {
+    code $files
 }
 
 Set-Alias glog GitLog
@@ -41,6 +45,7 @@ Set-Alias gmain GitPushMain
 Set-Alias gs GitStatus
 Set-Alias vs vscode
 Set-Alias ga GitAdd
+Set-Alias gcmes GitCommitMes
 
 Import-Module Terminal-Icons
 
