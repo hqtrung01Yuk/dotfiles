@@ -49,7 +49,7 @@ Set-Alias gmain GitPushMain
 Set-Alias gs GitStatus
 Set-Alias vs vscode
 Set-Alias ga GitAdd
-Set-Alias gcmes GitCommitMes
+Set-Alias gcmess GitCommitMes
 Set-Alias gremote GitRemoteOrigin
 
 Import-Module Terminal-Icons
