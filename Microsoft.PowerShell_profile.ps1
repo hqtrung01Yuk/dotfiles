@@ -26,6 +26,10 @@ function GitLog {
     git log
 }
 
+function GitRemoteOrigin($gitPath) {
+    git remote add origin $gitPath
+}
+
 function GitPushMain {
     git push origin main
 }
@@ -46,6 +50,7 @@ Set-Alias gs GitStatus
 Set-Alias vs vscode
 Set-Alias ga GitAdd
 Set-Alias gcmes GitCommitMes
+Set-Alias gremote GitRemoteOrigin
 
 Import-Module Terminal-Icons
 
