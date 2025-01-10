@@ -2,7 +2,7 @@
 
 oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\nordtron.omp.json' | Invoke-Expression
 
-#Alias
+# Set Alias
 Set-Alias l ls
 Set-Alias g git
 
@@ -52,8 +52,14 @@ Set-Alias ga Git
 Set-Alias gcmess GitCommitMes
 Set-Alias gremote GitRemoteOrigin
 
+#PSFzf
+Import-Module PSFzf
+Set-PsFzfOption -PSRealineChordProvider "Ctrl+f" -PSReadlinChordReverseHistory "Ctrl+r"
+
+# Terminal Icon
 Import-Module Terminal-Icons
 
+#Which command
 function which ($command) {
     Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
