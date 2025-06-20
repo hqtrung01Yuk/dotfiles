@@ -2,15 +2,31 @@
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
-alias home='cd ~ && echo Welcome home'
+alias home='cd ~ && echo Welcome home!'
 alias gin='git init'
 alias ga='git add'
 alias gst='git status'
 alias gl='git log'
 alias cls='clear'
-alias gmain='git push origin main'
-alias gp='git push'
+alias gpmain='git push origin main'
 alias gremote='git remote -v'
+alias bye='echo Bye! && exit'
+
+gp() {
+  # Lấy tên nhánh hiện tại
+  current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+  # Kiểm tra có commit chưa
+  if [ -z "$(git status --porcelain)" ]; then
+    echo "✅ Nothing to commit. Pushing branch '$current_branch'..."
+  else
+    echo "⚠️ You have uncommitted changes. Please commit first!"
+    return 1
+  fi
+
+  # Đẩy code lên remote origin với nhánh hiện tại
+  git push origin "$current_branch"
+}
 
 grmtadd() {
     git remote add "S1" "S2"
@@ -19,5 +35,6 @@ grmtadd() {
 gcmess() {
     git commit -m "S1"
 }
+
 
 alias gempty='git commit --allow-empty-message'
