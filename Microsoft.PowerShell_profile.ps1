@@ -1,8 +1,9 @@
 # . $env:USERPROFILE\.config\powershell\user_profile.ps1g
 
-oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\nordtron.omp.json' | Invoke-Expression
+# oh-my-posh
+# oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\nordtron.omp.json' | Invoke-Expression
 
-# Set Alias
+# Set Alias Powershell
 Set-Alias l ls
 Set-Alias g git
 
