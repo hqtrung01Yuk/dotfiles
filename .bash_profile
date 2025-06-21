@@ -32,9 +32,4 @@ grmtadd() {
     git remote add "S1" "S2"
 }
 
-gcmess() {
-    git commit -m "S1"
-}
-
-
 alias gempty='git commit --allow-empty-message'
