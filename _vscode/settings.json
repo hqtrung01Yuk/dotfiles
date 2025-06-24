@@ -1,0 +1,164 @@
+{
+  // editor/extensions
+  "editor.fontLigatures": true,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "'FiraMono Nerd Font Mono', Consolas, 'Courier New'",
+  "terminal.integrated.fontFamily": "'FiraMono Nerd Font Mono'",
+  "editor.wordWrap": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+  "extensions.ignoreRecommendations": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.find.autoFindInSelection": "always",
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.editor.enableCodeActions": false,
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "none",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.tree.indent": 10,
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": true,
+  "window.zoomLevel": -1.5,
+  // begin Java
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\Program Files\\Java\\jdk-17"
+    },
+    {
+      "name": "JavaSE-21",
+      "path": "C:\\Program Files\\Java\\jdk-21",
+      "default": true
+    }
+  ],
+  "java.help.collectErrorLog": true,
+  "files.encoding": "utf8",
+  "java.project.encoding": "setDefault",
+  "boot-java.common.properties-metadata": "",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "workbench.editorAssociations": {
+    "*.jar": "default"
+  },
+  "java.eclipse.downloadSources": true,
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.Assert.*",
+    "org.junit.Assume.*",
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.junit.jupiter.api.DynamicContainer.*",
+    "org.junit.jupiter.api.DynamicTest.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*",
+    "org.mockito.Answers.*"
+  ],
+  "redhat.telemetry.enabled": true,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.autobuild.enabled": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  // powershell
+  "[powershell]": {
+    "files.encoding": "utf8"
+  },
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // formatter
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // mssql
+  "mssql.connections": [
+    {
+      "server": "localhost",
+      "database": "",
+      "authenticationType": "SqlLogin",
+      "user": "sa",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true,
+      "encrypt": "Mandatory",
+      "trustServerCertificate": true,
+      "connectTimeout": 15,
+      "commandTimeout": 30,
+      "applicationName": "vscode-mssql",
+      "id": "01CCAE8E-A21C-40B2-B90E-8B57C2695A5D",
+      "groupId": "ACAA2B83-3C3E-4D9C-ADA6-1397AE3EB211"
+    }
+  ],
+  "mssql.enableRichExperiences": true,
+  "git.openRepositoryInParentFolders": "always",
+  // catppuccin
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "catppuccin.italicKeywords": true,
+  "catppuccin.italicComments": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "catppuccin.accentColor": "mauve",
+  "catppuccin.colorOverrides": {
+    // make text red red all flavors
+    "all": {
+      "text": "#fff"
+    },
+    // make Mocha "OLEDppuccin" - use black editor background
+    "macchiato": {}
+  },
+  "catppuccin.customUIColors": {
+    "macchiato": {
+      "statusBar.foreground": "#bcdfff"
+    }
+  },
+  "editor.largeFileOptimizations": false,
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "eslint.useFlatConfig": false,
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "ACAA2B83-3C3E-4D9C-ADA6-1397AE3EB211"
+    }
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  // proxy
+  // "http.proxy": "http://username:password@hostname:port/",
+  // "http.proxyAuthorization": null,
+  // "http.proxyStrictSSL": true,
+  // json schemaDownload
+  "json.schemaDownload.enable": false,
+  "database-client.autoSync": true,
+  "mssql.autoDisableNonTSqlLanguageService": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "html": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "mssql.objectExplorer.groupBySchema": false
+}
