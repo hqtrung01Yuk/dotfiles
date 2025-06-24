@@ -12,7 +12,7 @@ alias gpmain='git push origin main'
 alias gremote='git remote -v'
 alias bye='echo Bye! && exit'
 
-gp() {
+gpup() {
   # Lấy tên nhánh hiện tại
   current_branch=$(git rev-parse --abbrev-ref HEAD)
 
@@ -26,10 +26,6 @@ gp() {
 
   # Đẩy code lên remote origin với nhánh hiện tại
   git push origin "$current_branch"
-}
-
-grmtadd() {
-    git remote add "S1" "S2"
 }
 
 alias gempty='git commit --allow-empty-message'
