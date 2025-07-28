@@ -23,34 +23,11 @@ config.window_background_opacity = 0.3
 -- print(os.getevn("HOME"))
 -- local user_home = os.getenv("~")
 
-local user_home = "C:\\Users\\ADMIN\\"-- Lấy thư mục User trên Windows
--- local background_folder = user_home .. "\\Pictures\\Genshin Impact\\"
--- Hàm chọn ngẫu nhiên ảnh nền
--- local function pick_random_background(folder)
-   -- local handle = io.popen('dir "' .. folder .. '"')  -- Dùng dir /b /s cho Windows
+-- home in window
+local user_home = "userprofile"
 
-    -- if not handle then
-       -- wezterm.log_error("Could not list files in " .. folder)
-        -- return nil
-    -- end
+-- block image
 
-    -- local files = handle:read("*a")
-    -- handle:close()
-
-    -- local images = {}
-    -- for file in string.gmatch(files, "[^\r\n]+") do
-      --  table.insert(images, file)
-    -- end
-
-    -- if #images > 1 then
-       -- math.randomseed(os.time())  -- Đảm bảo ảnh chọn ra là ngẫu nhiên
-       -- return images[math.random(#images)]
---    else
---        wezterm.log_error("No images found in " .. folder)
---        return nil
---    end
--- end
--- Đây là phần bị lỗi - phải nằm trong cấu hình keys
 config.keys = {
     {
         key = "v",
@@ -70,7 +47,7 @@ config.keys = {
 
             if bg_image then
                 window:set_config_overrides({
-                    window_background_image = bg_image,  -- Cập nhật ảnh nền
+                    window_background_image = bg_image,
                 })
                 wezterm.log_info("New background: " .. bg_image)
             else
