@@ -25,7 +25,7 @@ config.window_background_opacity = 0.3
 
 -- home in window
 local user_home = "userprofile"
-
+print(os.getenv(user_home))
 -- block image
 
 config.keys = {
