@@ -9,6 +9,7 @@ setopt extended_history
 setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
+export PATH=$PATH:/usr/local/bin
 
 # Prompt configuration
 autoload -Uz colors && colors
@@ -62,9 +63,9 @@ gpup() {
 
 alias gempty='git commit --allow-empty-message'
 
-# Fastfetch
+# neofetch
 if [ -z "$FASTFETCH_RAN" ]; then
-    fastfetch
+    neofetch
     export FASTFETCH_RAN=1
 fi
 
