@@ -10,7 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
@@ -29,7 +28,6 @@ export PATH=$PATH:/usr/local/bin
 
 # Prompt configuration
 autoload -Uz colors && colors
-PROMPT="%F{green}%n@%m%f:%F{blue}%~%f$ "
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
@@ -59,30 +57,29 @@ alias home='cd ~ && echo "Welcome home!"'
 alias gin='git init'
 alias ga='git add'
 alias gst='git status'
-alias gl='git log'
+alias gl='git log --oneline --graph --decorate'
 alias gremote='git remote -v'
 alias bye='echo "Bye!" && exit'
 
 # Git functions
 gpup() {
   current_branch=$(git rev-parse --abbrev-ref HEAD)
-  
+
   if [ -z "$(git status --porcelain)" ]; then
     echo "✅ Nothing to commit. Pushing branch '$current_branch'..."
   else
     echo "⚠️ You have uncommitted changes. Please commit first!"
     return 1
   fi
-  
+
   git push origin "$current_branch"
 }
 
 alias gempty='git commit --allow-empty-message'
 
 # neofetch
-if [ -z "$FASTFETCH_RAN" ]; then
+if command -v neofetch &> /dev/null; then
     neofetch
-    export FASTFETCH_RAN=1
 fi
 
 # Bat
