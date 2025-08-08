@@ -76,6 +76,7 @@ gpup() {
 }
 
 alias gempty='git commit --allow-empty-message'
+alias tree='find . -print | sed -e "s;[^/]*/;|____;g;s;____|; |;g"'
 
 # neofetch
 if command -v neofetch &> /dev/null; then
