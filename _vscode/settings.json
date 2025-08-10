@@ -11,6 +11,8 @@
     "comments": "on",
     "strings": "on"
   },
+  "workbench.statusBar.visible": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "workbench.iconTheme": "material-icon-theme",
   "editor.largeFileOptimizations": false,
   "extensions.ignoreRecommendations": true,
@@ -22,7 +24,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDelete": false,
-  "workbench.activityBar.location": "default",
   "workbench.editor.showTabs": "multiple",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
@@ -133,5 +134,7 @@
   "git.autofetch": true,
   "github.copilot.editor.enableCodeActions": false,
   "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.nextEditSuggestions.enabled": false
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "security.allowedUNCHosts": ["wsl.localhost"]
 }
