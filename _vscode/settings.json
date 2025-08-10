@@ -13,6 +13,7 @@
   },
   "workbench.statusBar.visible": true,
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "workbench.activityBar.location": "default",
   "workbench.iconTheme": "material-icon-theme",
   "editor.largeFileOptimizations": false,
   "extensions.ignoreRecommendations": true,
