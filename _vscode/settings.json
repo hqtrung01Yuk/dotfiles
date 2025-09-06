@@ -36,6 +36,7 @@
   "window.zoomLevel": -1.5,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "liveServer.settings.donotShowInfoMsg": true,
+  "editor.lineNumbers": "relative",
   // begin Java
   "java.configuration.runtimes": [
     {
