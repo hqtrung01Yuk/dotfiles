@@ -124,18 +124,12 @@
     }
   },
   // git
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "html": false
-  },
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
-  "github.copilot.editor.enableCodeActions": false,
-  "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.nextEditSuggestions.enabled": false,
   "chat.commandCenter.enabled": false,
-  "security.allowedUNCHosts": ["wsl.localhost"]
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "markdown-preview-enhanced.enablePreviewZenMode": true,
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "chat.notifyWindowOnConfirmation": false,
+  "telemetry.feedback.enabled": false
 }
