@@ -19,7 +19,7 @@
   "extensions.ignoreRecommendations": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.autoFindInSelection": "always",
-  "editor.cursorBlinking": "smooth",
+  "editor.cursorBlinking": "blink",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -37,6 +37,10 @@
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.lineNumbers": "relative",
+  "workbench.tree.enableStickyScroll": false,
+  "editor.stickyScroll.enabled": false,
+  // material
+  "material-icon-theme.hidesExplorerArrows": true,
   // begin Java
   "java.configuration.runtimes": [
     {
@@ -49,7 +53,6 @@
       "default": true
     }
   ],
-
   "java.help.collectErrorLog": true,
   "files.encoding": "utf8",
   "java.project.encoding": "setDefault",
@@ -74,10 +77,13 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.autobuild.enabled": true,
   "java.configuration.updateBuildConfiguration": "automatic",
+  "java.import.gradle.user.home": "C:\\Tools\\gradle\\gradle-8.13\\bin",
+  "java.import.gradle.offline.enabled": true,
   // powershell
   "[powershell]": {
     "files.encoding": "utf8"
   },
+  "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   // formatter
@@ -91,7 +97,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -128,9 +134,12 @@
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
   "chat.commandCenter.enabled": false,
-  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
   "markdown-preview-enhanced.enablePreviewZenMode": true,
-  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "chat.notifyWindowOnConfirmation": false,
-  "telemetry.feedback.enabled": false
+  "telemetry.feedback.enabled": false,
+  "chat.agent.enabled": false
 }
