@@ -31,12 +31,12 @@ print(os.getenv(user_home))
 config.keys = {
     {
         key = "v",
-        mods = "CTRL",
+        mods = "CTRL|SHIFT",
         action = wezterm.action.PasteFrom("Clipboard")
     },
     {
         key = 'C',
-        mods = 'CTRL',
+        mods = 'CTRL|SHIFT',
         action = wezterm.action.CopyTo('Clipboard'),
     }
     {
@@ -82,4 +82,5 @@ config.color_scheme = 'Tokyo Night Storm'
 
 config.default_cursor_style = "BlinkingUnderline"
 return config
+
 
