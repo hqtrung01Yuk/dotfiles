@@ -35,6 +35,11 @@ config.keys = {
         action = wezterm.action.PasteFrom("Clipboard")
     },
     {
+        key = 'C',
+        mods = 'CTRL',
+        action = wezterm.action.CopyTo('Clipboard'),
+    }
+    {
         key = "l",
         mods = "CTRL|ALT",
         action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" }
@@ -77,3 +82,4 @@ config.color_scheme = 'Tokyo Night Storm'
 
 config.default_cursor_style = "BlinkingUnderline"
 return config
+
