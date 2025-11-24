@@ -1,6 +1,7 @@
 {
-  // editor/extensions
+  // editor/extensionsmarkdownpd
   "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "off",
   "workbench.colorTheme": "Catppuccin Macchiato",
   "editor.renderWhitespace": "all",
   "editor.fontFamily": "'FiraMono Nerd Font Mono', Consolas, 'Courier New'",
@@ -15,11 +16,11 @@
   "editor.unicodeHighlight.nonBasicASCII": false,
   "workbench.activityBar.location": "default",
   "workbench.iconTheme": "material-icon-theme",
+  "telemetry.feedback.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "editor.largeFileOptimizations": false,
   "extensions.ignoreRecommendations": true,
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.autoFindInSelection": "always",
-  "editor.cursorBlinking": "blink",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -39,8 +40,11 @@
   "editor.lineNumbers": "relative",
   "workbench.tree.enableStickyScroll": false,
   "editor.stickyScroll.enabled": false,
+  "editor.unusualLineTerminators": "off",
   // material
   "material-icon-theme.hidesExplorerArrows": true,
+  // markdown
+  "markdown-preview-enhanced.enablePreviewZenMode": true,
   // begin Java
   "java.configuration.runtimes": [
     {
@@ -51,7 +55,7 @@
       "name": "JavaSE-21",
       "path": "C:\\Program Files\\Java\\jdk-21",
       "default": true
-    }
+    },
   ],
   "java.help.collectErrorLog": true,
   "files.encoding": "utf8",
@@ -59,7 +63,7 @@
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
   "workbench.editorAssociations": {
-    "*.jar": "default"
+    "*.jar": "default",
   },
   "java.eclipse.downloadSources": true,
   "java.completion.favoriteStaticMembers": [
@@ -73,12 +77,19 @@
     "org.mockito.ArgumentMatchers.*",
     "org.mockito.Answers.*"
   ],
+  "jdk.telemetry.enabled": true,
   "redhat.telemetry.enabled": true,
   "java.compile.nullAnalysis.mode": "automatic",
   "java.autobuild.enabled": true,
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.import.gradle.user.home": "C:\\Tools\\gradle\\gradle-8.13\\bin",
   "java.import.gradle.offline.enabled": true,
+  "java.import.gradle.enabled": true,
+  "java.import.gradle.wrapper.enabled": true,
+  "java.import.gradle.version": "",
+  "java.import.gradle.home": "",
+  "java.import.gradle.arguments": "",
+  "java.import.gradle.jvmArguments": "",
   // powershell
   "[powershell]": {
     "files.encoding": "utf8"
@@ -133,13 +144,59 @@
   // git
   "git.openRepositoryInParentFolders": "always",
   "git.autofetch": true,
-  "chat.commandCenter.enabled": false,
+  // wsl
   "security.allowedUNCHosts": [
     "wsl.localhost"
   ],
-  "markdown-preview-enhanced.enablePreviewZenMode": true,
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  // disable chat/copilot/AI agent
   "chat.notifyWindowOnConfirmation": false,
-  "telemetry.feedback.enabled": false,
-  "chat.agent.enabled": false
+  "chat.commandCenter.enabled": false,
+  "chat.agent.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": false,
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "github.copilot.chat.agent.autoFix": false,
+  "github.copilot.chat.agent.currentEditorContext.enabled": false,
+  // pđf
+  "pdf.view": "*.pdf",
+  // background
+  "background.enabled": true,
+  "background.editor": {
+    "useFront": true,
+    "style": {
+      "background-position": "100% 100%",
+      "background-size": "cover",
+      "opacity": 0.2,
+      "interval": 0,
+    },
+    "background.sidebar": {},
+    "background.panel": {},
+    "styles": [
+      {},
+      {},
+      {}
+    ],
+    "images": [
+      "file:///%HOME%\\Pictures\\img-destop\\Pictures\\img-destop\\Saved Pictures\\20200913_225629.jpg"
+    ],
+    "interval": 0,
+    "random": false
+  }
 }
