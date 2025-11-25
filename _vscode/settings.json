@@ -90,10 +90,12 @@
   "java.import.gradle.offline.enabled": true,
   "java.import.gradle.enabled": true,
   "java.import.gradle.wrapper.enabled": true,
-  "java.import.gradle.version": "",
+  "java.import.gradle.version": "current",
   "java.import.gradle.home": "",
   "java.import.gradle.arguments": "",
+  "java.gradle.buildServer.enabled": "on",
   "java.import.gradle.jvmArguments": "",
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25",
   // powershell
   "[powershell]": {
     "files.encoding": "utf8"
@@ -101,6 +103,7 @@
   "terminal.integrated.stickyScroll.enabled": false,
   "terminal.integrated.suggest.enabled": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.minimumContrastRatio": 1,
   // formatter
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -130,7 +133,6 @@
   // catppuccin
   "catppuccin.italicKeywords": true,
   "catppuccin.italicComments": true,
-  "terminal.integrated.minimumContrastRatio": 1,
   "catppuccin.accentColor": "mauve",
   "catppuccin.colorOverrides": {
     // make text red red all flavors
