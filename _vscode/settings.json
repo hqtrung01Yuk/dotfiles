@@ -41,6 +41,7 @@
   "workbench.tree.enableStickyScroll": false,
   "editor.stickyScroll.enabled": false,
   "editor.unusualLineTerminators": "off",
+  "files.encoding": "utf8",
   // material
   "material-icon-theme.hidesExplorerArrows": true,
   // markdown
@@ -54,11 +55,14 @@
     {
       "name": "JavaSE-21",
       "path": "C:\\Program Files\\Java\\jdk-21",
+    },
+    {
+      "name": "JavaSE-25",
+      "path": "C:\\Program Files\\Java\\jdk-25",
       "default": true
     },
   ],
   "java.help.collectErrorLog": true,
-  "files.encoding": "utf8",
   "java.project.encoding": "setDefault",
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
