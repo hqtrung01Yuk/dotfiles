@@ -178,25 +178,14 @@
   "pdf.view": "*.pdf",
   // background
   "background.enabled": true,
-  "background.editor": {
-    "useFront": true,
-    "style": {
-      "background-position": "100% 100%",
-      "background-size": "cover",
-      "opacity": 0.2,
-      "interval": 0,
-    },
-    "background.sidebar": {},
-    "background.panel": {},
-    "styles": [
-      {},
-      {},
-      {}
-    ],
+  "background.fullscreen": {
     "images": [
-      "file:///%HOME%\\Pictures\\img-destop\\Pictures\\img-destop\\Saved Pictures\\20200913_225629.jpg"
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\Saved Pictures\\20200913_225629.jpg"
     ],
+    "opacity": 0.1,
+    "size": "cover",
+    "position": "center",
     "interval": 0,
-    "random": false
+    "random": false,
   }
 }
