@@ -46,28 +46,32 @@
   "material-icon-theme.hidesExplorerArrows": true,
   // markdown
   "markdown-preview-enhanced.enablePreviewZenMode": true,
-  // begin Java
+  // begin Java - improved configuration
+  // Use JAVA_HOME if available; set explicit runtimes for tools that read these settings.
+  "java.jdt.ls.java.home": "${env:ProgramFiles}\\Java\\jdk-21",
+  "java.jdt.ls.vmargs": "-Xms256m -Xmx2G -XX:+UseG1GC -XX:+UseStringDeduplication -Duser.country=US -Dfile.encoding=UTF-8",
+  "java.trace.server": "messages",
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-17",
-      "path": "C:\\Program Files\\Java\\jdk-17"
+      "path": "${env:ProgramFiles}\\Java\\jdk-17"
     },
     {
       "name": "JavaSE-21",
-      "path": "C:\\Program Files\\Java\\jdk-21",
+      "path": "${env:ProgramFiles}\\Java\\jdk-21",
+      "default": true
     },
     {
       "name": "JavaSE-25",
-      "path": "C:\\Program Files\\Java\\jdk-25",
-      "default": true
-    },
+      "path": "${env:ProgramFiles}\\Java\\jdk-25",
+    }
   ],
   "java.help.collectErrorLog": true,
   "java.project.encoding": "setDefault",
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
   "workbench.editorAssociations": {
-    "*.jar": "default",
+    "*.jar": "default"
   },
   "java.eclipse.downloadSources": true,
   "java.completion.favoriteStaticMembers": [
@@ -81,13 +85,17 @@
     "org.mockito.ArgumentMatchers.*",
     "org.mockito.Answers.*"
   ],
+  "java.referencesCodeLens.enabled": true,
+  "java.implementationsCodeLens.enabled": true,
+  "java.completion.enabled": true,
+  "java.completion.filteredTypes": [],
   "jdk.telemetry.enabled": true,
   "java.dependency.autoRefresh": true,
   "redhat.telemetry.enabled": true,
   "java.compile.nullAnalysis.mode": "automatic",
   "java.autobuild.enabled": true,
   "java.configuration.updateBuildConfiguration": "automatic",
-  "java.import.gradle.user.home": "C:\\Tools\\gradle\\gradle-8.13\\bin",
+  "java.import.gradle.user.home": "${env:USERPROFILE}\\.gradle",
   "java.import.gradle.offline.enabled": true,
   "java.import.gradle.enabled": true,
   "java.import.gradle.wrapper.enabled": true,
@@ -96,12 +104,11 @@
   "java.import.gradle.arguments": "",
   "java.gradle.buildServer.enabled": "on",
   "java.import.gradle.jvmArguments": "",
-  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25",
   // end java
-  // begin .NET
+  // begin .NET - improved configuration
+  // Prefer the new .NET tooling; enable Roslyn analyzers and a modern omnisharp runtime when needed.
   "dotnet.enableXamlTools": true,
   "dotnet.autoDetect": "on",
-  "omnisharp.dotNetCliPaths": [],
   "dotnet.server.useOmnisharp": false,
   "dotnet.autoInsert.enableAutoInsert": true,
   "dotnet.defaultSolution": "",
@@ -112,7 +119,10 @@
   "dotnet.highlighting.highlightRelatedJsonComponents": true,
   "dotnet.projects.enableAutomaticRestore": true,
   "dotnet.projects.enableFileBasedPrograms": true,
-  // end .NET 
+  // Omnisharp (C# extension) improvements
+  // If you use dotnet test explorer or other test tools, point to dotnet in PATH or set explicit path:
+  // "dotnet.testExplorer.dotnetPath": "${env:ProgramFiles}\\dotnet\\dotnet.exe",
+  // end .NET
   // powershell
   "[powershell]": {
     "files.encoding": "utf8"
@@ -139,7 +149,6 @@
   },
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
-    // "editor.formatOnSave": true
   },
   "[xml]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
@@ -152,11 +161,9 @@
   "catppuccin.italicComments": true,
   "catppuccin.accentColor": "mauve",
   "catppuccin.colorOverrides": {
-    // make text red red all flavors
     "all": {
       "text": "#fff"
     },
-    // make Mocha "OLEDppuccin" - use black editor background
     "macchiato": {}
   },
   "catppuccin.customUIColors": {
@@ -197,7 +204,7 @@
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "github.copilot.chat.agent.autoFix": false,
   "github.copilot.chat.agent.currentEditorContext.enabled": false,
-  // pđf
+  // pdf
   "pdf.view": "*.pdf",
   // background
   "background.enabled": true,
@@ -209,6 +216,6 @@
     "size": "cover",
     "position": "center",
     "interval": 0,
-    "random": false,
+    "random": false
   }
 }
