@@ -82,6 +82,7 @@
     "org.mockito.Answers.*"
   ],
   "jdk.telemetry.enabled": true,
+  "java.dependency.autoRefresh": true,
   "redhat.telemetry.enabled": true,
   "java.compile.nullAnalysis.mode": "automatic",
   "java.autobuild.enabled": true,
@@ -96,12 +97,28 @@
   "java.gradle.buildServer.enabled": "on",
   "java.import.gradle.jvmArguments": "",
   "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25",
+  // end java
+  // begin .NET
+  "dotnet.enableXamlTools": true,
+  "dotnet.autoDetect": "on",
+  "omnisharp.dotNetCliPaths": [],
+  "dotnet.server.useOmnisharp": false,
+  "dotnet.autoInsert.enableAutoInsert": true,
+  "dotnet.defaultSolution": "",
+  "dotnet.navigation.navigateToSourceLinkAndEmbeddedSources": true,
+  "dotnet.automaticallyCreateSolutionInWorkspace": true,
+  "dotnet.preferVisualStudioCodeFileSystemWatcher": false,
+  "dotnet.formatting.organizeImportsOnFormat": true,
+  "dotnet.highlighting.highlightRelatedJsonComponents": true,
+  "dotnet.projects.enableAutomaticRestore": true,
+  "dotnet.projects.enableFileBasedPrograms": true,
+  // end .NET 
   // powershell
   "[powershell]": {
     "files.encoding": "utf8"
   },
   "terminal.integrated.stickyScroll.enabled": false,
-  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.enabled": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.minimumContrastRatio": 1,
   // formatter
@@ -188,7 +205,7 @@
     "images": [
       "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\Saved Pictures\\20200913_225629.jpg"
     ],
-    "opacity": 0.1,
+    "opacity": 0.05,
     "size": "cover",
     "position": "center",
     "interval": 0,
