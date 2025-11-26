@@ -48,22 +48,22 @@
   "markdown-preview-enhanced.enablePreviewZenMode": true,
   // begin Java - improved configuration
   // Use JAVA_HOME if available; set explicit runtimes for tools that read these settings.
-  "java.jdt.ls.java.home": "${env:ProgramFiles}\\Java\\jdk-21",
+  "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-21",
   "java.jdt.ls.vmargs": "-Xms256m -Xmx2G -XX:+UseG1GC -XX:+UseStringDeduplication -Duser.country=US -Dfile.encoding=UTF-8",
   "java.trace.server": "messages",
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-17",
-      "path": "${env:ProgramFiles}\\Java\\jdk-17"
+      "path": "C:\\Program Files\\Java\\jdk-17",
     },
     {
       "name": "JavaSE-21",
-      "path": "${env:ProgramFiles}\\Java\\jdk-21",
+      "path": "C:\\Program Files\\Java\\jdk-21",
       "default": true
     },
     {
       "name": "JavaSE-25",
-      "path": "${env:ProgramFiles}\\Java\\jdk-25",
+      "path": "C:\\Program Files\\Java\\jdk-25",
     }
   ],
   "java.help.collectErrorLog": true,
@@ -105,8 +105,7 @@
   "java.gradle.buildServer.enabled": "on",
   "java.import.gradle.jvmArguments": "",
   // end java
-  // begin .NET - improved configuration
-  // Prefer the new .NET tooling; enable Roslyn analyzers and a modern omnisharp runtime when needed.
+  // begin .NET
   "dotnet.enableXamlTools": true,
   "dotnet.autoDetect": "on",
   "dotnet.server.useOmnisharp": false,
@@ -119,9 +118,6 @@
   "dotnet.highlighting.highlightRelatedJsonComponents": true,
   "dotnet.projects.enableAutomaticRestore": true,
   "dotnet.projects.enableFileBasedPrograms": true,
-  // Omnisharp (C# extension) improvements
-  // If you use dotnet test explorer or other test tools, point to dotnet in PATH or set explicit path:
-  // "dotnet.testExplorer.dotnetPath": "${env:ProgramFiles}\\dotnet\\dotnet.exe",
   // end .NET
   // powershell
   "[powershell]": {
@@ -164,11 +160,18 @@
     "all": {
       "text": "#fff"
     },
-    "macchiato": {}
+    "frappe": {
+      "blue": "#bcdfff",
+      "sky": "#282a36"
+    }
   },
   "catppuccin.customUIColors": {
-    "macchiato": {
-      "statusBar.foreground": "#bcdfff"
+    "frappe": {
+      "statusBar.background": "#bcdfff",
+      "activityBar.background": "#bcdfff",
+      "statusBar.foreground": "#282a36",
+      "activityBar.foreground": "#282a36",
+      "tab.activeBorder": "#bcdfff",
     }
   },
   // git
