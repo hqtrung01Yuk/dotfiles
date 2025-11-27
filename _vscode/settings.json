@@ -71,7 +71,9 @@
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
   "workbench.editorAssociations": {
-    "*.jar": "default"
+    "*.jar": "default",
+    "*.epub": "dodo-reader.epubEditor",
+    "*.pdf": "dodo-reader.pdfEditor"
   },
   "java.eclipse.downloadSources": true,
   "java.completion.favoriteStaticMembers": [
@@ -190,6 +192,9 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  // pdf/epub
+  "pdf.view": "*.pdf",
+  "dodo-reader.epubEditor": "*.epub",
   // disable chat/copilot/AI agent
   "chat.notifyWindowOnConfirmation": false,
   "chat.commandCenter.enabled": false,
@@ -207,8 +212,6 @@
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "github.copilot.chat.agent.autoFix": false,
   "github.copilot.chat.agent.currentEditorContext.enabled": false,
-  // pdf
-  "pdf.view": "*.pdf",
   // background
   "background.enabled": true,
   "background.fullscreen": {
@@ -220,5 +223,5 @@
     "position": "center",
     "interval": 0,
     "random": false
-  }
+  },
 }
