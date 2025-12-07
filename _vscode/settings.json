@@ -216,12 +216,31 @@
   "background.enabled": true,
   "background.fullscreen": {
     "images": [
-      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\Saved Pictures\\20200913_225629.jpg"
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_1.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_2.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_3.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_4.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_5.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_6.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_7.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_8.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_9.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_10.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_11.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_12.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_13.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_14.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_15.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_16.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_17.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_18.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_19.jpeg",
+      "file:///C:\\Users\\ADMIN\\Pictures\\img-destop\\walls\\walls_20.jpeg",
     ],
     "opacity": 0.05,
     "size": "cover",
     "position": "center",
-    "interval": 0,
-    "random": false
+    "interval": 30,
+    "random": true
   },
 }
