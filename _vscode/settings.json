@@ -243,4 +243,7 @@
     "interval": 30,
     "random": true
   },
+  // pomotimer
+  "pomotimer.workTime": 30,
+  "pomotimer.breakTime": 5,
 }
