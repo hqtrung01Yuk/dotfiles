@@ -240,10 +240,10 @@
     "opacity": 0.05,
     "size": "cover",
     "position": "center",
-    "interval": 30,
+    "interval": 900,
     "random": true
   },
   // pomotimer
-  "pomotimer.workTime": 30,
-  "pomotimer.breakTime": 5,
+  // "pomotimer.workTime": 30,
+  // "pomotimer.breakTime": 5,
 }
