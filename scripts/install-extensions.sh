@@ -16,9 +16,6 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
-code --install-extension github.copilot
-code --install-extension github.copilot-chat
-code --install-extension github.remotehub
 code --install-extension github.vscode-github-actions
 code --install-extension inferrinizzard.prettier-sql-vscode
 code --install-extension mathematic.vscode-pdf
@@ -30,9 +27,6 @@ code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
 code --install-extension ms-python.vscode-python-envs
 code --install-extension ms-vscode-remote.remote-wsl
-code --install-extension ms-vscode.azure-repos
-code --install-extension ms-vscode.powershell
-code --install-extension ms-vscode.remote-repositories
 code --install-extension n3rds-inc.pomodoro-timer-focus
 code --install-extension pkief.material-icon-theme
 code --install-extension redhat.java
@@ -47,17 +41,14 @@ code --install-extension unthrottled.doki-theme
 code --install-extension vintharas.learn-vim
 code --install-extension vmware.vscode-boot-dev-pack
 code --install-extension vmware.vscode-spring-boot
-code --install-extension vscjava.migrate-java-to-azure
 code --install-extension vscjava.vscode-gradle
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-java-upgrade
 code --install-extension vscjava.vscode-maven
 code --install-extension vscjava.vscode-spring-boot-dashboard
 code --install-extension vscjava.vscode-spring-initializr
-code --install-extension vscode-icons-team.vscode-icons
 code --install-extension vue.volar
 code --install-extension wenyikun.dodo-reader
 code --install-extension xdebug.php-debug
