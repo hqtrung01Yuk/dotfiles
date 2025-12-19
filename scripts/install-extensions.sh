@@ -1,5 +1,8 @@
-chmod +x install-extensions.sh
+#!/usr/bin/env bash
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 while read -r ext; do
     [[ -z "$ext" || "$ext" =~ ^# ]] && continue
     code --install-extension "$ext"
-done < extensions.txt
+done < "$SCRIPT_DIR/extensions.txt"
