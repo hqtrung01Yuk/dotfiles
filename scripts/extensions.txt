@@ -8,7 +8,6 @@ devsense.composer-php-vscode
 devsense.intelli-php-vscode
 devsense.phptools-vscode
 devsense.profiler-php-vscode
-donjayamanne.githistory
 editorconfig.editorconfig
 enkia.tokyo-night
 esbenp.prettier-vscode
