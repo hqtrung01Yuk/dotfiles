@@ -10,7 +10,7 @@ Run script after install VSCode to install extensions
 
 ```bash
 #! /usr/bin/bash
-chmod +x ./_vscode/install-extensions.sh
+chmod +x ./scripts/install-extensions.sh
 ./scripts/install-extensions.sh
 ```
 
