@@ -19,6 +19,41 @@ chmod +x ./scripts/install-extensions.sh
 Check version Powershell, recommend use Powershell 7+,
 default Windows are using Windows Powershell 5
 
+Command to check version into Terminal at Windows.
+
+```powershell
+$PSVersionTable
+
+# Output
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.2506                # <- Here is your default version of your Windows (this version is 5)
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.2506               # <- Here have been builded Windows 10
+CLRVersion                     4.0.30319.42000               # <- Here have been builded CLR used to .NET Framework 4
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+```
+
+Download Powershell version 7 using winget (package manager)
+
+```powershell
+winget search --id Microsoft.PowerShell
+
+# Output
+Name               Id                           Version Source
+---------------------------------------------------------------
+PowerShell         Microsoft.PowerShell         7.5.4.0 winget
+PowerShell Preview Microsoft.PowerShell.Preview 7.6.0.6 winget
+
+# Download with --id param
+winget install --id Microsoft.PowerShell --source winget
+```
+
+Then download extension for VSCode
+
 ```ps1
 # For scoped to the current user (meaning for home directory in Windows)
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
