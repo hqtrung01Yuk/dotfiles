@@ -1,0 +1,17 @@
+{
+  "version": "11.0.29+7",
+  "description": "Eclipse Temurin OpenJDK 11 LTS",
+  "homepage": "https://adoptium.net/",
+  "license": "GPL-2.0-with-classpath-exception",
+  "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jdk_x64_windows_hotspot_11.0.29_7.zip",
+  "hash": "c21b63f6391b9d8f8aa969fb99250de797539cfb54232f5d4d371993f0c235b5",
+  "extract_dir": "jdk-11.0.29+7",
+  "bin": [
+    ["bin\\java.exe", "java11"],
+    ["bin\\javac.exe", "javac11"],
+    ["bin\\javaw.exe", "javaw11"]
+  ],
+  "env_set": {
+    "JAVA11_HOME": "$dir"
+  }
+}

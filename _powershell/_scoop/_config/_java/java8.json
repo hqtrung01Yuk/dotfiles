@@ -1,0 +1,15 @@
+{
+  "version": "8u472-b08",
+  "description": "Eclipse Temurin OpenJDK 8 LTS",
+  "homepage": "https://adoptium.net/",
+  "license": "GPL-2.0-with-classpath-exception",
+  "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u472b08.zip",
+  "hash": "cbafb089f7c8a3e873607c8f4fe40e4943297f641d27806e055e782c82a33985",
+  "extract_dir": "jdk8u472-b08",
+  "bin": [
+    ["bin\\java.exe", "java8"],
+    ["bin\\javac.exe", "javac8"],
+    ["bin\\javaw.exe", "javaw8"]
+  ],
+  "env_set": { "JAVA8_HOME": "$dir" }
+}

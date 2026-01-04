@@ -1,0 +1,15 @@
+{
+  "version": "21.0.8",
+  "description": "Oracle Java Development Kit 21 LTS",
+  "homepage": "https://www.oracle.com/java/",
+  "license": "Oracle-No-Fee-License",
+  "url": "https://download.oracle.com/java/21/archive/jdk-21.0.8_windows-x64_bin.zip",
+  "hash": "174aaf80b21860657bbc024fcfadf092fc43653a308383ee04b2e5406972cc2a",
+  "extract_dir": "jdk-21.0.8",
+  "bin": [
+    ["bin\\java.exe", "java21"],
+    ["bin\\javac.exe", "javac21"],
+    ["bin\\javaw.exe", "javaw21"]
+  ],
+  "env_set": { "JAVA21_HOME": "$dir" }
+}

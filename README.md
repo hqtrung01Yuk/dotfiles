@@ -54,14 +54,14 @@ winget install --id Microsoft.PowerShell --source winget
 
 Then download extension for VSCode
 
-```ps1
+```powershell
 # For scoped to the current user (meaning for home directory in Windows)
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 # Recommend
 ./scripts/install-extensions.ps1
 
-# Without policy
+# Without policy (Powershell 5)
 powershell -ExecutionPolicy Bypass -File install-extensions.ps1
 
 # PowerShell 7
@@ -72,7 +72,7 @@ pwsh ./install-extensions.ps1
 
 ## For Windows
 
-```ps1
+```powershell
 # For profile Terminal Powershell
 Copy-Item './_powershell/Microsoft.PowerShell_profile.ps1' '~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1'
 
@@ -89,6 +89,41 @@ cp './_powershell/Microsoft.PowerShell_profile.ps1' '~/.config/powershell/Micros
 # For profile Terminal VSCode
 cp './_powershell/Microsoft.VSCode_profile.ps1' '~/.config/powershell/Microsoft.VSCode_profile.ps1'
 ```
+
+# Setup Scoop and Package for Scoop
+
+Install Scoop and its packages:
+
+```powershell
+# Temporarily bypass execution policy for the current PowerShell session
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# Run package installation script
+# PowerShell 5 (Windows PowerShell)
+powershell -ExecutionPolicy Bypass -File .\_powershell\_scoop\_config\package.ps1
+
+# PowerShell 7 (Recommended)
+pwsh -ExecutionPolicy Bypass -File .\_powershell\_scoop\_config\package.ps1
+```
+
+# Setup Winget and download backup by Winget process
+
+## Method 1: Using PowerShell (Recommended: PowerShell 7)
+
+```powershell
+# PowerShell 7 – Install for Machine (Admin)
+pwsh -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winget.ps1"
+
+# PowerShell 5 – Install for Machine (Admin)
+powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winget.ps1"
+```
+
+> Note: To install packages into `C:\Program Files` (Machine scope), run PowerShell as Administrator.
+
+Method 2: Using the .bat File
+
+- Double-click run-winget.bat and select Run as Administrator.
+- This will automatically execute winget.ps1 with the correct execution policy and install packages for the entire machine.
 
 # About NVim
 

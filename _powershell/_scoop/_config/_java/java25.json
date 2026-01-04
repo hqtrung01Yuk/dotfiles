@@ -1,0 +1,15 @@
+{
+  "version": "25.0.1",
+  "description": "Oracle Java Development Kit 25 LTS",
+  "homepage": "https://www.oracle.com/java/",
+  "license": "Oracle-No-Fee-License",
+  "url": "https://download.oracle.com/java/25/archive/jdk-25.0.1_windows-x64_bin.zip",
+  "hash": "814530b8ae9aca4843b6f70cf14dac1d43a88e220847d3b91323e854d79cee88",
+  "extract_dir": "jdk-25.0.1",
+  "bin": [
+    ["bin\\java.exe", "java25"],
+    ["bin\\javac.exe", "javac25"],
+    ["bin\\javaw.exe", "javaw25"]
+  ],
+  "env_set": { "JAVA25_HOME": "$dir" }
+}
