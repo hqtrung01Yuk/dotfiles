@@ -120,7 +120,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winge
 
 > Note: To install packages into `C:\Program Files` (Machine scope), run PowerShell as Administrator.
 
-Method 2: Using the .bat File
+## Method 2: Using the .bat File
 
 - Double-click run-winget.bat and select Run as Administrator.
 - This will automatically execute winget.ps1 with the correct execution policy and install packages for the entire machine.
