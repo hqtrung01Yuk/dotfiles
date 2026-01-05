@@ -138,7 +138,7 @@ scoop install vscode -g
 
 ### Using Winget
 
-VSCode have been had in backup.json, <a href="#setup-winget-and-download-backup-by-winget-process">check Winget proccess</a>
+VSCode have been had in backup.json, <a href="#setup-winget">check Winget proccess</a>
 
 If install by CLI used to Winget
 
