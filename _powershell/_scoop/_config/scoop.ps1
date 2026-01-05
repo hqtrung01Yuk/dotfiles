@@ -34,7 +34,13 @@ if(-not $has_command -and -not $has_path) {
     Write-Host "Scoop are ready" -ForegroundColor Green
 }
 
-scoop import ./_powershell/_scoop/_config/backup.json
+$backup_file = "$PSScriptRoot\backup.json";
+if([System.IO.File]::Exists($backup_file)) {
+    & scoop import $backup_file
+    Write-Host "Import file backup successfully" -ForegroundColor Green
+} else {
+    Write-Host "Can't not import backup by Scoop" -ForegroundColor Red
+}
 
 $javaManifests = @{
     "java8"  = "$PSScriptRoot\_java\java8.json"
