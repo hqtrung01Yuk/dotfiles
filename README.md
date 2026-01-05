@@ -10,8 +10,19 @@ My setup code editor, environment, configuration
 
 1. [Setup Scoop](#setup-scoop-and-packages)
 2. [Setup Winget](#setup-winget)
+
+   - [Method 1](#method-1-using-powershell-recommended-powershell-7)
+   - [Method 2](#method-2-using-the-bat-file)
+
 3. [Setup PowerShell](#setup-powershell)
+
+   - [Install](#install-powershell)
+   - [For Window](#for-windows)
+   - [For Linux/Git Bash](#for-git-bash--linux-using-powershell-instead)
+
 4. [Setup VSCode](#setup-vscode)
+   - [Linux/Git Bash](#linux--git-bash)
+   - [Windows](#windows)
 5. [Neovim](#about-nvim)
 
 ---
@@ -44,7 +55,7 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winget.ps1"
 powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winget.ps1"
 ```
 
-> Note: To install packages into `C:\Program Files` (Machine scope), run PowerShell as Administrator.
+> **Note:** To install packages into `C:\Program Files` (Machine scope), run PowerShell as Administrator.
 
 ## Method 2: Using the .bat File
 
@@ -55,7 +66,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winge
 
 ## Install Powershell
 
-Check PowerShell version (PowerShell 7+ recommended)
+Check PowerShell version (PowerShell 7+ recommended).
+
 Windows defaults to Windows Powershell 5
 
 Command to check version into Terminal at Windows.
