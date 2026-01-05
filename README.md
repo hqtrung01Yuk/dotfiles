@@ -39,39 +39,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winge
 
 # Setup Powershell
 
-## For Windows
-
-```powershell
-# For profile Terminal Powershell
-Copy-Item './_powershell/Microsoft.PowerShell_profile.ps1' '~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1'
-
-# For profile Terminal VSCode
-Copy-Item './_powershell/Microsoft.PowerShell_profile.ps1' '~/Documents/WindowsPowerShell/Microsoft.VSCode_profile.ps1'
-```
-
-## For Git Bash / Linux using Powershell instead
-
-```bash
-# For profile Terminal Powershell
-cp './_powershell/Microsoft.PowerShell_profile.ps1' '~/.config/powershell/Microsoft.PowerShell_profile.ps1'
-
-# For profile Terminal VSCode
-cp './_powershell/Microsoft.VSCode_profile.ps1' '~/.config/powershell/Microsoft.VSCode_profile.ps1'
-```
-
-# Setup VSCode
-
-Run script after install VSCode to install extensions
-
-## Linux / Git Bash
-
-```bash
-#! /usr/bin/bash
-chmod +x ./scripts/install-extensions.sh
-./scripts/install-extensions.sh
-```
-
-## Windows
+## Install Powershell
 
 Check version Powershell, recommend use Powershell 7+,
 default Windows are using Windows Powershell 5
@@ -108,6 +76,64 @@ PowerShell Preview Microsoft.PowerShell.Preview 7.6.0.6 winget
 # Download with --id param
 winget install --id Microsoft.PowerShell --source winget
 ```
+
+
+## For Windows
+
+```powershell
+# For profile Terminal Powershell
+Copy-Item './_powershell/Microsoft.PowerShell_profile.ps1' '~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1'
+
+# For profile Terminal VSCode
+Copy-Item './_powershell/Microsoft.PowerShell_profile.ps1' '~/Documents/WindowsPowerShell/Microsoft.VSCode_profile.ps1'
+```
+
+## For Git Bash / Linux using Powershell instead
+
+```bash
+# For profile Terminal Powershell
+cp './_powershell/Microsoft.PowerShell_profile.ps1' '~/.config/powershell/Microsoft.PowerShell_profile.ps1'
+
+# For profile Terminal VSCode
+cp './_powershell/Microsoft.VSCode_profile.ps1' '~/.config/powershell/Microsoft.VSCode_profile.ps1'
+```
+
+# Setup VSCode
+
+## Install VSCode
+
+### Using Scoop
+
+```powershell
+# Add bucket extras
+scoop bucket add extras
+
+scoop install vscode -g
+```
+
+### Using Winget
+
+VSCode have been had in backup.json, <a href="https://github.com/hqtrung01Yuk/dotfiles?tab=readme-ov-file#setup-winget-and-download-backup-by-winget-process">check Winget proccess</a>
+
+If install by CLI used to Winget
+
+```powershell
+winget install Microsoft.VisualStudioCode
+```
+
+## Install extensions VSCode
+
+Run script after install VSCode to install extensions
+
+### Linux / Git Bash
+
+```bash
+#! /usr/bin/bash
+chmod +x ./scripts/install-extensions.sh
+./scripts/install-extensions.sh
+```
+
+### Windows
 
 Then download extension for VSCode
 
