@@ -2,7 +2,21 @@
 
 My setup code editor, environment, configuration
 
-# Setup Scoop and Package for Scoop
+> **Note:** If you need to set up PowerShell 7 first, [click here](#install-powershell).
+
+---
+
+## Table of Contents
+
+1. [Setup Scoop](#setup-scoop-and-packages)
+2. [Setup Winget](#setup-winget)
+3. [Setup PowerShell](#setup-powershell)
+4. [Setup VSCode](#setup-vscode)
+5. [Neovim](#about-nvim)
+
+---
+
+# Setup Scoop and Packages
 
 Install Scoop and its packages:
 
@@ -18,7 +32,7 @@ powershell -ExecutionPolicy Bypass -File .\_powershell\_scoop\_config\package.ps
 pwsh -ExecutionPolicy Bypass -File .\_powershell\_scoop\_config\package.ps1
 ```
 
-# Setup Winget and download backup by Winget process
+# Setup Winget
 
 ## Method 1: Using PowerShell (Recommended: PowerShell 7)
 
@@ -41,8 +55,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ".\_powershell\_winget\winge
 
 ## Install Powershell
 
-Check version Powershell, recommend use Powershell 7+,
-default Windows are using Windows Powershell 5
+Check PowerShell version (PowerShell 7+ recommended)
+Windows defaults to Windows Powershell 5
 
 Command to check version into Terminal at Windows.
 
@@ -76,7 +90,6 @@ PowerShell Preview Microsoft.PowerShell.Preview 7.6.0.6 winget
 # Download with --id param
 winget install --id Microsoft.PowerShell --source winget
 ```
-
 
 ## For Windows
 
