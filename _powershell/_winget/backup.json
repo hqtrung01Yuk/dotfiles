@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-  "CreationDate": "2026-01-04T02:45:03.438-00:00",
+  "CreationDate": "2026-01-07T23:02:49.704-00:00",
   "Sources": [
     {
       "Packages": [
@@ -38,13 +38,25 @@
           "PackageIdentifier": "Microsoft.VCRedist.2010.x64"
         },
         {
+          "PackageIdentifier": "Oracle.JDK.21"
+        },
+        {
           "PackageIdentifier": "BlenderFoundation.Blender"
         },
         {
           "PackageIdentifier": "Cloudflare.Warp"
         },
         {
+          "PackageIdentifier": "Microsoft.VCRedist.2008.x64"
+        },
+        {
+          "PackageIdentifier": "Oracle.JDK.25"
+        },
+        {
           "PackageIdentifier": "Nvidia.PhysX"
+        },
+        {
+          "PackageIdentifier": "Oracle.JDK.17"
         },
         {
           "PackageIdentifier": "Microsoft.VisualStudioCode"
@@ -71,6 +83,9 @@
           "PackageIdentifier": "Valve.Steam"
         },
         {
+          "PackageIdentifier": "Microsoft.VCRedist.2013.x64"
+        },
+        {
           "PackageIdentifier": "Microsoft.DotNet.DesktopRuntime.6"
         },
         {
@@ -78,6 +93,15 @@
         },
         {
           "PackageIdentifier": "Microsoft.VCRedist.2012.x86"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCRedist.2005.x86"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCRedist.2015+.x64"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCRedist.2008.x86"
         },
         {
           "PackageIdentifier": "Microsoft.VCRedist.2013.x86"
@@ -120,6 +144,12 @@
         },
         {
           "PackageIdentifier": "Microsoft.AppInstaller"
+        },
+        {
+          "PackageIdentifier": "Microsoft.UI.Xaml.2.7"
+        },
+        {
+          "PackageIdentifier": "Microsoft.UI.Xaml.2.8"
         },
         {
           "PackageIdentifier": "Microsoft.VCLibs.Desktop.14"
